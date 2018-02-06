@@ -6,7 +6,7 @@
 # 1.0 | 06/02/2018 - Versão inicial - Isaac de Moraes
 ############################################################################
 
-$sessionAD = New-PSSession -ComputerName sserverad -Credential domain\user
+$SessionAD = New-PSSession -ComputerName serverAD -Credential domain\user
 Import-Module activedirectory
 
 $old = Get-Content "C:\PowerShell\old.csv"
@@ -19,4 +19,4 @@ Rename-ADObject $old[1] -NewName $new[1]
 
 }
 
-Remove-PSSession $sessionAD
+Remove-PSSession $SessionAD
