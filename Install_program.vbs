@@ -9,7 +9,7 @@ Set oReg=GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & _
  
 strKeyPath = "C:\Program Files\"
 
-strValueName = "McAfee Endpoint Security"
+  strValueName = "Install Name Program"
 
 oReg.GetExpandedStringValue HKEY_CURRENT_USER,strKeyPath,strValueName,strValue
  
