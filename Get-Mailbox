@@ -1,0 +1,5 @@
+(Get-Mailbox -Filter {HiddenFromAddressListsEnabled -eq $true} -Database <name>).count
+(Get-Mailbox -Filter {HiddenFromAddressListsEnabled -eq $false} -Database <name>).count
+(Get-Mailbox -Database <name>).count
+(Get-DistributionGroup).count
+(Get-DynamicDistributionGroup).count
