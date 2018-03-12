@@ -1,0 +1,1 @@
+Get-ADUser -Filter {enabled -eq $true} | Select-object Samaccountname, Enabled
